@@ -1,10 +1,17 @@
 site_name: Scared's Mods & Plugins | Documentation
+site_url: https://scaredsmods.github.io/
 nav: 
 - Home: 'index.md'
-- Mods: 'mods/index.md'
+- Mods:
+    - 'mods/index.md'
+    - More Outputs API: 
+      - Getting Started: 'mods/more-outputs-api/index.md'
+      - Block: 'mods/more-outputs-api/block.md'
+      - Block Entity: 'mods/more-outputs-api/blockentity.md'
+      - Recipe: 'mods/more-outputs-api/recipe.md'
+      - Screenhandlers: 'mods/more-outputs-api/screenhandlers.md'
 - Plugins: 'plugins/index.md'
 - Version Schemes: 'version-schemes/index.md'
-- Main Site: 'https://scaredsmods.github.io'
 
 repo_name: scaredsmods/scaredsmods.github.io
 repo_url: https://github.com/scaredsmods/scaredsmods.github.io
@@ -16,6 +23,12 @@ theme:
     annotation: material/plus-circle
   features:
     - content.code.annotate
+    - content.tabs.link
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -61,6 +74,9 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tilde
   - pymdownx.critic
+  - pymdownx.caret
+  
+
 
 
 
