@@ -1,0 +1,68 @@
+site_name: Scared's Mods & Plugins | Documentation
+nav: 
+- Home: 'index.md'
+- Mods: 'mods/index.md'
+- Plugins: 'plugins/index.md'
+- Version Schemes: 'version-schemes/index.md'
+- Main Site: 'https://scaredsmods.github.io'
+
+repo_name: scaredsmods/scaredsmods.github.io
+repo_url: https://github.com/scaredsmods/scaredsmods.github.io
+
+theme: 
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+    annotation: material/plus-circle
+  features:
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - footnotes
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tilde
+  - pymdownx.critic
+
+
+
+
+
