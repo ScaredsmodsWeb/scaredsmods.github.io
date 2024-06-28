@@ -20,9 +20,6 @@ Before we can create our block entity, we need to first make 2 'helper' classes,
 
     ```
 
-    
-1. ❌ Here should be an error present, as we haven't made that class yet
-
 === "ImplementedInventory"
 
 
