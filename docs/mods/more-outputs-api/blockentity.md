@@ -5,7 +5,7 @@ Before we can create our block entity, we need to first make 2 'helper' classes,
 
 === "ModBlockEntities"
 
-    ``` java
+    ```java
     public class ModBlockEntities {
 
         public static final BlockEntityType<ExampleBlockEntity> EXAMPLE_BLOCK_ENTITY = 
@@ -20,10 +20,13 @@ Before we can create our block entity, we need to first make 2 'helper' classes,
 
     ```
 
+    
+1. ❌ Here should be an error present, as we haven't made that class yet
+
 === "ImplementedInventory"
 
 
-    ``` java 
+    ```java 
     
         /**
          * A simple {@code SidedInventory} implementation with only default methods + an item list getter.
@@ -230,6 +233,6 @@ Before we can create our block entity, we need to first make 2 'helper' classes,
 
     ```
 
-1. ❌ Here should be an error present, as we haven't made that class yet
+
 
 To create a block entity, create a new class in ```net.example.yourmodid.block.entity```, the class should extend
