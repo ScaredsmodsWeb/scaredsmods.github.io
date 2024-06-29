@@ -1,6 +1,6 @@
 # Block
 
-Now we can create the ```ModBlocks``` class in the ```block``` package. For this to work, in your main class, in this case ```Main``` there should be a field like this: 
+Now we can create the ```ModBlocks``` class in the ```block``` package. For this to work, in your main class, in this case ```ExampleMod``` there should be a field like this: 
 
 ```java
 
@@ -14,7 +14,7 @@ public static final String MOD_ID = "yourmodid";
 public class ModBlocks {
 
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block",
-        new ExampleBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque())); // (1)
+        new ExampleBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque())); // (1)!
     
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -27,7 +27,7 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        Main.LOGGER.info("Registering ModBlocks for " + Main.MOD_ID); // (2)
+        ExampleMod.LOGGER.info("Registering ModBlocks for " + ExampleMod.MOD_ID); // (2)!
     }
 }
 
@@ -71,15 +71,15 @@ public class ExampleBlock extends BlockWithEntity implements BlockEntityProvider
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new ExampleBlockEntity(pos, state); // (1) 
+        return new ExampleBlockEntity(pos, state); // (1)!
     }
 
     @Override
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof ExampleBlockEntity) { // (2) 
-                ItemScatterer.spawn(world, pos, (ExampleBlockEntity)blockEntity); // (3)
+            if (blockEntity instanceof ExampleBlockEntity) { // (2)! 
+                ItemScatterer.spawn(world, pos, (ExampleBlockEntity)blockEntity); // (3)!
                 world.updateComparators(pos,this);
             }
             super.onStateReplaced(state, world, pos, newState, moved);
@@ -91,7 +91,7 @@ public class ExampleBlock extends BlockWithEntity implements BlockEntityProvider
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!world.isClient) {
-            NamedScreenHandlerFactory screenHandlerFactory = ((ExampleBlockEntity) world.getBlockEntity(pos)); // (4)
+            NamedScreenHandlerFactory screenHandlerFactory = ((ExampleBlockEntity) world.getBlockEntity(pos)); // (4)!
 
             if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);
@@ -104,7 +104,7 @@ public class ExampleBlock extends BlockWithEntity implements BlockEntityProvider
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return validateTicker(type, ModBlockEntities.EXAMPLE_BLOCK_ENTITY, // (5)
+        return validateTicker(type, ModBlockEntities.EXAMPLE_BLOCK_ENTITY, // (5)!
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 }

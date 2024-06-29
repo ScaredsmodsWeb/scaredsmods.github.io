@@ -1,5 +1,6 @@
 # More Ouputs API
 
+### VERY BIG DISCLAIMER: This tutorial was written for Minecraft 1.20.4, ANY VERSION THAT IS NEWER WILL NOT WORK. Im currently working on making a 1.20.5+ tutorial, I don't know how long this will take, stay tuned and read well.
 
 ## Version scheme for More Outputs API
 
@@ -60,6 +61,7 @@ Minecraft Version | Mod Version| Mod Loader | Status
 
 ## Usage
 I would assume that you already know most of the things we are about to do, but for those that don't know, here is the tutorial!
+
 
 
 ### What we'll need
