@@ -5,7 +5,7 @@ Before we can create our block entity, we need to first make 2 'helper' classes,
 
 === "ModBlockEntities"
 
-    ``` java
+    ```java
     public class ModBlockEntities {
 
         public static final BlockEntityType<ExampleBlockEntity> EXAMPLE_BLOCK_ENTITY =  // (1)
@@ -31,7 +31,7 @@ Before we can create our block entity, we need to first make 2 'helper' classes,
 === "ImplementedInventory"
 
 
-    ``` java 
+    ```java 
     
         /**
          * A simple {@code SidedInventory} implementation with only default methods + an item list getter.
@@ -360,7 +360,7 @@ public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, Pla
 }
 ```
 
-1. ❌ Here should be an error present, as we haven't made that class yet
+
 
 
 ```java title="tick()"

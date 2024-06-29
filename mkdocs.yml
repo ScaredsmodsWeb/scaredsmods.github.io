@@ -10,7 +10,13 @@ nav:
       - Block Entity: 'mods/more-outputs-api/blockentity.md'
       - Recipe: 'mods/more-outputs-api/recipe.md'
       - Screenhandlers: 'mods/more-outputs-api/screenhandlers.md'
-- Plugins: 'plugins/index.md'
+- Plugins: 
+    - 'plugins/index.md'
+    - SubCommandLib: 
+      - Getting Started: 'plugins/subcommandlib/index.md'
+      - Manager class: 'plugins/subcommandlib/manager.md'
+      - Adding Subcommands: 'plugins/subcommandlib/subcommands.md'
+      - Registering: 'plugins/subcommandlib/registering.md'
 - Version Schemes: 'version-schemes/index.md'
 
 repo_name: scaredsmods/scaredsmods.github.io
