@@ -1,7 +1,11 @@
 site_name: Scared's Mods & Plugins | Documentation
 site_url: https://scaredsmods.github.io/
 nav: 
-- Home: 'index.md'
+- Home: 
+    - 'index.md'
+    - Mods: 'mods/index.md'
+    - Plugins: 'plugins/index.md'
+    - Credits: 'credits.md'
 - Mods:
     - 'mods/index.md'
     - More Outputs API: 
@@ -17,7 +21,10 @@ nav:
       - Manager class: 'plugins/subcommandlib/manager.md'
       - Adding Subcommands: 'plugins/subcommandlib/subcommands.md'
       - Registering: 'plugins/subcommandlib/registering.md'
-- Version Schemes: 'version-schemes/index.md'
+- Version Schemes: 
+    - 'version-schemes/index.md'
+    - Mod version schemes: 'version-schemes/mod.md'
+    - Plugin version schemes: 'version-schemes/plugin.md'
 
 repo_name: scaredsmods/scaredsmods.github.io
 repo_url: https://github.com/scaredsmods/scaredsmods.github.io
