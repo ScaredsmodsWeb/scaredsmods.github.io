@@ -16,7 +16,11 @@ nav:
           - Two Outputs: 'mods/more-outputs-api/block-entity/two-outputs/index.md'
           - Three Outputs: 'mods/more-outputs-api/block-entity/three-outputs/index.md'
           - Four Outputs: 'mods/more-outputs-api/block-entity/four-outputs/index.md'
-      - Recipe: 'mods/more-outputs-api/recipe.md'
+      - Recipes: 
+          - Making a custom recipe: 'mods/more-outputs-api/recipe/index.md'
+          - Two output recipe: 'mods/more-outputs-api/recipe/two-output-recipe/index.md'
+          - Three output recipe: 'mods/more-outputs-api/recipe/three-output-recipe/index.md'
+          - Four output recipe: 'mods/more-outputs-api/recipe/four-output-recipe/index.md'
       - Screenhandlers: 'mods/more-outputs-api/screenhandlers.md'
 - Plugins: 
     - 'plugins/index.md'
@@ -47,6 +51,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - navigation.footer
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -94,10 +99,12 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.critic
   - pymdownx.caret
-  
 
-
-
-
-
-
+extra:
+  social:
+    - icon: simple/youtube
+      link: https://youtube.com/@scaredrabbitnl
+    - icon: simple/modrinth
+      link: https://modrinth.com/user/scaredrabbitnl_
+    - icon: simple/curseforge
+      link: https://www.curseforge.com/members/scaredrabbitnl/projects

@@ -68,6 +68,6 @@ I would assume that you already know most of the things we are about to do, but 
 
 - A custom [block](../more-outputs-api/block.md)
 - A (custom) [block entity](../more-outputs-api/block-entity/index.md)
-- A custom [recipe](../more-outputs-api/recipe.md) of course
+- A custom [recipe](../more-outputs-api/recipe/index.md) of course
 - A [screenhandler](../more-outputs-api/screenhandlers.md) for the block entity
 
