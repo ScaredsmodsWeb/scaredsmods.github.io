@@ -11,7 +11,10 @@ nav:
     - More Outputs API: 
       - Getting Started: 'mods/more-outputs-api/index.md'
       - Block: 'mods/more-outputs-api/block.md'
-      - Block Entity: 'mods/more-outputs-api/blockentity.md'
+      - Block Entity: 
+          - Two Outputs: 'mods/more-outputs-api/block-entity/two-outputs/index.md'
+          - Three Outputs: 'mods/more-outputs-api/block-entity/three-outputs/index.md'
+          - Four Outputs: 'mods/more-outputs-api/block-entity/four-outputs/index.md'
       - Recipe: 'mods/more-outputs-api/recipe.md'
       - Screenhandlers: 'mods/more-outputs-api/screenhandlers.md'
 - Plugins: 

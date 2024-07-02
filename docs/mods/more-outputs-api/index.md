@@ -67,7 +67,7 @@ I would assume that you already know most of the things we are about to do, but 
 ### What we'll need
 
 - A custom [block](../more-outputs-api/block.md)
-- A (custom) [block entity](../more-outputs-api/blockentity.md)
+- A (custom) block entity with [2](../more-outputs-api/block-entity/two-outputs/index.md), [3](../more-outputs-api/block-entity/three-outputs/index.md) or [4](../more-outputs-api/block-entity/four-outputs/index.md) output slots
 - A custom [recipe](../more-outputs-api/recipe.md) of course
 - A [screenhandler](../more-outputs-api/screenhandlers.md) for the block entity
 

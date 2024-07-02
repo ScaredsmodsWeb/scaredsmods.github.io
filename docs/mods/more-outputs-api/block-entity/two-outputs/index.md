@@ -1,4 +1,4 @@
-# Block Entity
+# Block Entity with two output slots
 
 Before we can create our block entity, we need to first make 2 'helper' classes, ```ModBlockEntities``` and a little helper class ```ImplementedInventory```. NOTE: I did not make the last class, all credits are available in that class.
 
@@ -273,6 +273,8 @@ private int maxProgress = 100; // (6)!
 5. At this point, the block entity (machine) starts crafting
 6. This is the max the crafting takes
 
+
+
 The constructor should look like this:
 
 ```java
@@ -360,6 +362,7 @@ public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, Pla
 }
 ```
 
+1. ❌ Error: Class not created
 
 
 
@@ -391,10 +394,69 @@ public void tick(World world, BlockPos pos, BlockState state) { // (1)!
 ```
 
 
-1. ❌ Here should be a few errors present, as we haven't made that class yet
+1. ❌ Here should be a few errors present, as we haven't made those methods yet
 
-```java title="resetProgress()"
+
+
+Now we are going to make the methods that are going to have influence on how the ```tick()``` method above behaves.
+Im doing it from top to bottom, and the first method (or boolean) is:
+
+```java title="areOutputSlotsEmptyOrReceivable()"
+private boolean areOutputsSlotEmptyOrReceivable() {
+    return this.getStack(OUTPUT_SLOT_1).isEmpty() || this.getStack(OUTPUT_SLOT_1).getCount() < this.getStack(OUTPUT_SLOT_1).getMaxCount()
+            ||
+            this.getStack(OUTPUT_SLOT_2).isEmpty() || this.getStack(OUTPUT_SLOT_2).getCount() < this.getStack(OUTPUT_SLOT_2).getMaxCount();
+}
+```
+What we are doing here, is checking if the output slots are empty or in the case that there ís an item in the slot, we check if the amount of items is smaller than 64 (```getMaxCount()```)
+
+
+
+Then, we check if the block entity has a recipe with ```hasRecipe()``` but before that methods, we need two other helper methods:
+
+```java title="canInsertItemIntoOutputSlots() & canInsertAmountIntoOutputSlots()"
+private boolean canInsertItemIntoOutputSlots(Item item, Item item2) {
+    return this.getStack(OUTPUT_SLOT_1).getItem() == item || this.getStack(OUTPUT_SLOT_1).isEmpty() &&
+        this.getStack(OUTPUT_SLOT_2).getItem() == item2 || this.getStack(OUTPUT_SLOT_2).isEmpty();
+    }
+
+private boolean canInsertAmountIntoOutputSlots(ItemStack result, ItemStack result2) {
+    return this.getStack(OUTPUT_SLOT_1).getCount() + result.getCount() <= getStack(OUTPUT_SLOT_1).getMaxCount() &&
+        this.getStack(OUTPUT_SLOT_2).getCount() + result2.getCount() <= getStack(OUTPUT_SLOT_2).getMaxCount();
+}
+```
+As you can see, we have two items in the first method, we check if the same item is in output slot 1 or 2 (or 3 or 4)  or that the output slot is empty.
+In the second method we compore the amount of items already in the output slots added to the result if thats smaller or equal to the maximum count of 64.
+
+
+
+
+Here we check if there is an item that can be inserted into the output slots and if there is a correct amount of it.
+
+```java title="hasRecipe()"
+
+private boolean hasRecipe() {
+    Optional<RecipeEntry<ExampleRecipe>> recipe = getCurrentRecipe();
+
+    return recipe.isPresent() && canInsertAmountIntoOutputSlot(recipe.get().value().getResult(null), recipe.get().value().getSecondResult(null))
+            && canInsertItemIntoOutputSlot(recipe.get().value().getResult(null).getItem(), recipe.get().value().getSecondResult(null).getItem());
+}
+```
+
+The ```increaseCraftProgress()```, ```resetProgress()``` and ```hasCraftingFinished``` methods aren't really that special so I'll list them here:
+
+
+
+
+```java title="resetProgress() & increaseCraftProgress() & hasCraftingFinished()"
 private void resetProgress() {
     this.progress = 0;
 }
+private void increaseCraftProgress() {
+    progress++;
+}
+private boolean hasCraftingFinished() {
+    return progress >= maxProgress;
+}
 ```
+Before we can make the last method use in the ```tick()``` method, we need a helper method called ```getCurrentRecipe()``` which gets the current recipe by accessing
