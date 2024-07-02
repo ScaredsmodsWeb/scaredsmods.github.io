@@ -100,6 +100,8 @@ The ```fits()``` method should return ```true```
 Since can't fill in the ```getSerializer()``` & ```getType()``` methods just yet, remove ```null;``` from the return statements to make a deliberate error to help us remember that we need to fill in that method.
 
 ## RecipeType & Serializer
+
+### RecipeType
 Now we can make the recipe type and recipe serializer, make a new sub class called ```Type``` and let it implement ```RecipeType<ExampleRecipe>```.
 This is a small subclass that only contains two fields: ```INSTANCE``` which creates a new instance of the ```Type``` class and ```ID``` which is the RecipeType ID(entifier)
 
@@ -111,5 +113,117 @@ public class Type implements RecipeType<ExampleRecipe> {
 }
 ``` 
 example_recipe can be whatever you want, just make sure its recognizeable.
+
+### Recipe Serializer
+
+The recipe serializer is a little more complicated but still pretty easy to do.
+Create another sub class in your class implementing Recipe, ill name it ```Serializer```. ```Serializer``` also needs the ```INSTANCE``` & ```ID``` fields but ```INSTANCE``` is equal to ```new Serializer()```.
+
+This is what the class should look like: 
+
+```java title="Serializer"
+
+public static class Serializer implements RecipeSerializer<ExampleRecipe> {
+
+    public static final Serializer INSTANCE = new Serializer();
+    public static final String ID = "example_recipe"
+    /*
+    This method is neccessary because of the codec, this is how it works
+    If you have more outputs, duplicate the third or fourth line and adjust it to your needs
+    */  
+    public static final Codec<ExampleRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
+            validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(ExampleRecipe::getIngredients),
+            ItemStack.RECIPE_RESULT_CODEC.fieldOf("output_1").forGetter(r -> r.output_1),
+            ItemStack.RECIPE_RESULT_CODEC.fieldOf("output_2").forGetter(r -> r.output_2)
+        ).apply(in, ExampleRecipe::new));
+    
+    
+
+
+    private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
+        return Codecs.validate(Codecs.validate(
+                delegate.listOf(), list -> list.size() > max ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
+        ), list -> list.isEmpty() ? DataResult.error(() -> "Recipe has no ingredients!") : DataResult.success(list));
+    }
+
+    @Override
+    public Codec<ExampleRecipe> codec() {
+        return CODEC;
+    }
+
+    @Override
+    public ExampleRecipe read(PacketByteBuf buf) {
+        DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
+
+        for(int i = 0; i < inputs.size(); i++) {
+            inputs.set(i, Ingredient.fromPacket(buf));
+        }
+
+        ItemStack output_1 = buf.readItemStack();
+        ItemStack output_2 = buf.readItemStack();
+        return new ExampleRecipe(inputs, output_1, output_2);//(1)!
+    }
+
+    @Override
+    public void write(PacketByteBuf buf, ExampleRecipe recipe) {
+        buf.writeInt(recipe.getIngredients().size());
+
+        for (Ingredient ingredient : recipe.getIngredients()) {
+                ingredient.write(buf);
+        }
+
+        buf.writeItemStack(recipe.getResult(null));
+        buf.writeItemStack(recipe.getSecondResult(null));
+    }
+}
+```
+
+1. If you have more outputs, declare more ItemStack's like above and add them to the constructor the same way as in the beginning.
+
+Now we can fill in ```getSerializer()``` & ```getType()``` :
+
+```java title=""
+@Override
+public RecipeSerializer<?> getSerializer() {
+    return Serializer.INSTANCE;
+}
+
+@Override
+public RecipeType<?> getType() {
+    return Type.INSTANCE;
+}
+```
+
+
+## Registering 
+
+To register the recipes, make a new class in the ```recipe``` package, I will call that ```ModRecipes```
+
+Make a method called ```registerModRecipes()```, it should be a void, in the method add these lines to the method:
+
+
+=== "Lines"
+
+    ```java title="Registering RecipeType & Serializer"
+        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(ExampleMod.MOD_ID, ExampleRecipe.Serializer.ID),
+            ExampleRecipe.Serializer.INSTANCE);
+        Registry.register(Registries.RECIPE_TYPE, new Identifier(ExampleMod.MOD_ID, ExampleRecipe.Type.ID),
+            ExampleRecipe.Type.INSTANCE);
+    ```
+
+=== "Full method"
+    
+    
+    ```java title="Full method"
+
+    public static void registerRecipes() {
+        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(ExampleMod.MOD_ID, ExampleRecipe.Serializer.ID),
+                ExampleRecipe.Serializer.INSTANCE);
+        Registry.register(Registries.RECIPE_TYPE, new Identifier(ExampleMod.MOD_ID, ExampleRecipe.Type.ID),
+                ExampleRecipe.Type.INSTANCE);
+    }
+    ```
+
+
 
 
