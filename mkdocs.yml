@@ -12,6 +12,7 @@ nav:
       - Getting Started: 'mods/more-outputs-api/index.md'
       - Block: 'mods/more-outputs-api/block.md'
       - Block Entity: 
+          - 'mods/more-outputs-api/block-entity/index.md'
           - Two Outputs: 'mods/more-outputs-api/block-entity/two-outputs/index.md'
           - Three Outputs: 'mods/more-outputs-api/block-entity/three-outputs/index.md'
           - Four Outputs: 'mods/more-outputs-api/block-entity/four-outputs/index.md'
