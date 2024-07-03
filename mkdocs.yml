@@ -21,7 +21,14 @@ nav:
           - Two output recipe: 'mods/more-outputs-api/recipe/two-output-recipe/index.md'
           - Three output recipe: 'mods/more-outputs-api/recipe/three-output-recipe/index.md'
           - Four output recipe: 'mods/more-outputs-api/recipe/four-output-recipe/index.md'
-      - Screenhandlers: 'mods/more-outputs-api/screenhandlers.md'
+      - Screenhandlers: 
+          - Getting started with screenhandlers: 'mods/more-outputs-api/screenhandler/index.md'
+          - Example screen: 'mods/more-outputs-api/screenhandler/examplescreen.md'
+          - Example screen handler: 'mods/more-outputs-api/screenhandler/examplescreenhandler.md'
+      - Finishing up:
+          - Registering: 'mods/more-outputs-api/registering.md'
+          - Connecting screen: 'mods/more-outputs-api/connecting.md'
+          - Other things: 'mods/more-outputs-api/other-things.md'
 - Plugins: 
     - 'plugins/index.md'
     - SubCommandLib: 
