@@ -1,0 +1,2157 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://scaredsmods.github.io/mods/more-outputs-api/block-entity/four-outputs/">
+      
+      
+        <link rel="prev" href="../three-outputs/">
+      
+      
+        <link rel="next" href="../../recipe/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Four Outputs - Scared's Mods & Plugins | Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#block-entity-with-two-output-slots" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Scared&#39;s Mods &amp; Plugins | Documentation" class="md-header__button md-logo" aria-label="Scared's Mods & Plugins | Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Scared's Mods & Plugins | Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Four Outputs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="cyan" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/scaredsmods/scaredsmods.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    scaredsmods/scaredsmods.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
+          
+  
+  Mods
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../plugins/" class="md-tabs__link">
+          
+  
+  Plugins
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../version-schemes/" class="md-tabs__link">
+          
+  
+  Version Schemes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Scared&#39;s Mods &amp; Plugins | Documentation" class="md-nav__button md-logo" aria-label="Scared's Mods & Plugins | Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Scared's Mods & Plugins | Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/scaredsmods/scaredsmods.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    scaredsmods/scaredsmods.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to Scaredsmods' documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mods
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plugins
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../credits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Mods
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Mods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mods
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    More Outputs API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            More Outputs API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra-info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../block/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Block
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Block Entity
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Block Entity
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Block entities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../two-outputs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Two Outputs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../three-outputs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Three Outputs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Four Outputs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Four Outputs
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fields-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields &amp; constructor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required methods
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recipes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Recipes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recipe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Making a custom recipe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recipe/two-output-recipe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Two output recipe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recipe/three-output-recipe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Three output recipe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recipe/four-output-recipe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Four output recipe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_6" id="__nav_2_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Screenhandlers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Screenhandlers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../screen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started with screenhandlers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../screen/examplescreenhandler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example screen handler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../screen/examplescreen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example screen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_7" id="__nav_2_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Finishing up
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Finishing up
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../registering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Registering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connecting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connecting screen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../other-things/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other things
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plugins
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Plugins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plugins
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    SubCommandLib
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            SubCommandLib
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../plugins/subcommandlib/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../plugins/subcommandlib/manager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manager class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../plugins/subcommandlib/subcommands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding Subcommands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../plugins/subcommandlib/registering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Registering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Version Schemes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Version Schemes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../version-schemes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Version schemes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../version-schemes/mod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mod version schemes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../version-schemes/plugin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plugin version schemes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fields-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields &amp; constructor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required methods
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="block-entity-with-two-output-slots">Block Entity with two output slots<a class="headerlink" href="#block-entity-with-two-output-slots" title="Permanent link">&para;</a></h1>
+<p>To create a block entity with two output slots, create a new class in <code>net.example.yourmodid.block.entity</code>, the class extends <code>BlockEntity</code> and implements <code>ExtendedScreenHandlerFactory, ImplementedInventory</code></p>
+<p>In action, it would look like this:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ExampleBlockEntity</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">BlockEntity</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">ExtendedScreenHandlerFactory</span><span class="p">,</span><span class="w"> </span><span class="n">ImplmentedInventory</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="fields-constructor">Fields &amp; constructor<a class="headerlink" href="#fields-constructor" title="Permanent link">&para;</a></h2>
+<p>Before we can make all the required methods, we need a few fields and a constructor.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">DefaultedList</span><span class="o">&lt;</span><span class="n">ItemStack</span><span class="o">&gt;</span><span class="w"> </span><span class="n">inventory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DefaultedList</span><span class="p">.</span><span class="na">ofSize</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">ItemStack</span><span class="p">.</span><span class="na">EMPTY</span><span class="p">);</span><span class="c1">//(1)!</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">INPUT_SLOT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="c1">//(2)!</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">OUTPUT_SLOT_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="c1">//(3)!</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">OUTPUT_SLOT_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="c1">//(4)!</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">OUTPUT_SLOT_3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="c1">//(5)!</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">OUTPUT_SLOT_4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="c1">//(6)!</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="kd">protected</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">PropertyDelegate</span><span class="w"> </span><span class="n">propertyDelegate</span><span class="p">;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="c1">//(7)!</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">maxProgress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="c1">//(8)!</span>
+</code></pre></div>
+<ol>
+<li>IMPORTANT: This should be the total amount of slots in the block entity &amp; recipe. Including the input &amp; output slots</li>
+<li>This is the slot you put the item to be crafted in.</li>
+<li>This is the first output in the recipe</li>
+<li>This is the second output in the recipe</li>
+<li>This is the third output in the recipe</li>
+<li>This is the fourth output in the recipe</li>
+<li>At this point, the block entity (machine) starts crafting</li>
+<li>This is the max amount of time the crafting takes</li>
+</ol>
+<p>The constructor should look like this:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">public</span><span class="w"> </span><span class="nf">ExampleBlockEntity</span><span class="p">(</span><span class="n">BlockPos</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">BlockState</span><span class="w"> </span><span class="n">state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="kd">super</span><span class="p">(</span><span class="n">ModBlockEntities</span><span class="p">.</span><span class="na">EXAMPLE_BLOCK_ENTITY</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">state</span><span class="p">);</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">propertyDelegate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PropertyDelegate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="nd">@Override</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">index</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">index</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">ExampleBlockEntity</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">progress</span><span class="p">;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">ExampleBlockEntity</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">maxProgress</span><span class="p">;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">                </span><span class="k">default</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">            </span><span class="p">};</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">        </span><span class="nd">@Override</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">set</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">            </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">index</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">ExampleBlockEntity</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">                </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">ExampleBlockEntity</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">maxProgress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">        </span><span class="nd">@Override</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">size</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="c1">//(1)!</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">    </span><span class="p">};</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>IMPORTANT: This should be the total amount of slots in the block entity &amp; recipe. Including the input &amp; output slots</li>
+</ol>
+<h2 id="required-methods">Required methods<a class="headerlink" href="#required-methods" title="Permanent link">&para;</a></h2>
+<p>Now we can make all the required methods neccessary: </p>
+<div class="highlight"><span class="filename">writeScreenOpeningData()</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nd">@Override</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">writeScreenOpeningData</span><span class="p">(</span><span class="n">ServerPlayerEntity</span><span class="w"> </span><span class="n">player</span><span class="p">,</span><span class="w"> </span><span class="n">PacketByteBuf</span><span class="w"> </span><span class="n">buf</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">buf</span><span class="p">.</span><span class="na">writeBlockPos</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">pos</span><span class="p">);</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">getDisplayName()</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nd">@Override</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">public</span><span class="w"> </span><span class="n">Text</span><span class="w"> </span><span class="nf">getDisplayName</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Text</span><span class="p">.</span><span class="na">literal</span><span class="p">(</span><span class="s">&quot;Example Block&quot;</span><span class="p">);</span><span class="c1">//(1)!</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>I would recommend that you make this translatable by replacing <code>Text.literal()</code> with <code>Text.translatable</code> and adding a translation key and translate it in for example <code>nl_nl.json</code></li>
+</ol>
+<div class="highlight"><span class="filename">getItems()</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nd">@Override</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">public</span><span class="w"> </span><span class="n">DefaultedList</span><span class="o">&lt;</span><span class="n">ItemStack</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getItems</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">inventory</span><span class="p">;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">readNbt() and writeNbt()</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nd">@Override</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">writeNbt</span><span class="p">(</span><span class="n">NbtCompound</span><span class="w"> </span><span class="n">nbt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="kd">super</span><span class="p">.</span><span class="na">writeNbt</span><span class="p">(</span><span class="n">nbt</span><span class="p">);</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="n">Inventories</span><span class="p">.</span><span class="na">writeNbt</span><span class="p">(</span><span class="n">nbt</span><span class="p">,</span><span class="w"> </span><span class="n">inventory</span><span class="p">);</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="n">nbt</span><span class="p">.</span><span class="na">putInt</span><span class="p">(</span><span class="s">&quot;example_block.progress&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">progress</span><span class="p">);</span><span class="c1">//(1)!</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">}</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nd">@Override</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">readNbt</span><span class="p">(</span><span class="n">NbtCompound</span><span class="w"> </span><span class="n">nbt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="kd">super</span><span class="p">.</span><span class="na">readNbt</span><span class="p">(</span><span class="n">nbt</span><span class="p">);</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="n">Inventories</span><span class="p">.</span><span class="na">readNbt</span><span class="p">(</span><span class="n">nbt</span><span class="p">,</span><span class="w"> </span><span class="n">inventory</span><span class="p">);</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="n">progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nbt</span><span class="p">.</span><span class="na">getInt</span><span class="p">(</span><span class="s">&quot;example_block.progress&quot;</span><span class="p">);</span><span class="c1">//(2)!</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>These two strings should match!</li>
+<li>These two strings should match!</li>
+</ol>
+<div class="highlight"><span class="filename">createMenu()</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nd">@Nullable</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nd">@Override</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kd">public</span><span class="w"> </span><span class="n">ScreenHandler</span><span class="w"> </span><span class="nf">createMenu</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">syncId</span><span class="p">,</span><span class="w"> </span><span class="n">PlayerInventory</span><span class="w"> </span><span class="n">playerInventory</span><span class="p">,</span><span class="w"> </span><span class="n">PlayerEntity</span><span class="w"> </span><span class="n">player</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ExampleScreenHandler</span><span class="p">(</span><span class="n">syncId</span><span class="p">,</span><span class="w"> </span><span class="n">playerInventory</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">propertyDelegate</span><span class="p">);</span><span class="c1">//(1)!</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>❌ Error: Class not created</li>
+</ol>
+<div class="highlight"><span class="filename">tick()</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">tick</span><span class="p">(</span><span class="n">World</span><span class="w"> </span><span class="n">world</span><span class="p">,</span><span class="w"> </span><span class="n">BlockPos</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">BlockState</span><span class="w"> </span><span class="n">state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="c1">//(1)!</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">world</span><span class="p">.</span><span class="na">isClient</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">        </span><span class="k">return</span><span class="p">;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">areOutputSlotsEmptyOreReceivable</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">hasRecipe</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">increaseCraftProgress</span><span class="p">();</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">            </span><span class="n">markDirty</span><span class="p">(</span><span class="n">world</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">state</span><span class="p">);</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">hasCraftingFinished</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">                </span><span class="k">this</span><span class="p">.</span><span class="na">craftItem</span><span class="p">();</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">                </span><span class="k">this</span><span class="p">.</span><span class="na">resetProgress</span><span class="p">();</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">resetProgress</span><span class="p">();</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">resetProgress</span><span class="p">();</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="w">        </span><span class="n">markDirty</span><span class="p">(</span><span class="n">world</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">state</span><span class="p">);</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>❌ Here should be a few errors present, as we haven't made those methods yet</li>
+</ol>
+<p>Now we are going to make the methods that are going to have influence on how the <code>tick()</code> method above behaves.
+Im doing it from top to bottom, and the first method (or boolean) is:</p>
+<p><div class="highlight"><span class="filename">areOutputSlotsEmptyOrReceivable()</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">areOutputsSlotEmptyOrReceivable</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">())</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">            </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">            </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">())</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">            </span><span class="o">&amp;&amp;</span><span class="w"> </span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">            </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">())</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">            </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">            </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">());</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="p">}</span>
+</code></pre></div>
+What we are doing here, is checking if the output slots are empty or in the case that there ís an item in the slot, we check if the amount of items is smaller than 64 (<code>getMaxCount()</code>)</p>
+<p>Then, we check if the block entity has a recipe with <code>hasRecipe()</code> but before that methods, we need two other helper methods:</p>
+<p><div class="highlight"><span class="filename">canInsertItemIntoOutputSlots() & canInsertAmountIntoOutputSlots()</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">canInsertItemIntoOutputSlots</span><span class="p">(</span><span class="n">Item</span><span class="w"> </span><span class="n">item</span><span class="p">,</span><span class="w"> </span><span class="n">Item</span><span class="w"> </span><span class="n">item2</span><span class="p">,</span><span class="w"> </span><span class="n">Item</span><span class="w"> </span><span class="n">item3</span><span class="p">,</span><span class="w"> </span><span class="n">Item</span><span class="w"> </span><span class="n">item4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getItem</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">        </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getItem</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">item2</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">        </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getItem</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">item3</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">        </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getItem</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">item4</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">());</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">canInsertAmountIntoOutputSlots</span><span class="p">(</span><span class="n">ItemStack</span><span class="w"> </span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">ItemStack</span><span class="w"> </span><span class="n">result2</span><span class="p">,</span><span class="w"> </span><span class="n">ItemStack</span><span class="w"> </span><span class="n">result3</span><span class="p">,</span><span class="w"> </span><span class="n">ItemStack</span><span class="w"> </span><span class="n">result4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">result</span><span class="p">.</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">result2</span><span class="p">.</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">result3</span><span class="p">.</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">result4</span><span class="p">.</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">();</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="p">}</span>
+</code></pre></div>
+As you can see, we have two items in the first method, we check if the same item is in output slot 1 or 2 (or 3 or 4)  or that the output slot is empty.
+In the second method we compore the amount of items already in the output slots added to the result if thats smaller or equal to the maximum count of 64.</p>
+<p>Here we check if there is an item that can be inserted into the output slots and if there is a correct amount of it.</p>
+<div class="highlight"><span class="filename">hasRecipe()</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">hasRecipe</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">RecipeEntry</span><span class="o">&lt;</span><span class="n">ExampleRecipe</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">recipe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getCurrentRecipe</span><span class="p">();</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">isPresent</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">canInsertAmountIntoOutputSlot</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getResult</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getSecondResult</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span><span class="w"> </span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">        </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getThirdResult</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getFourthResult</span><span class="p">(</span><span class="kc">null</span><span class="p">))</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">        </span><span class="o">&amp;&amp;</span><span class="w"> </span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">        </span><span class="n">canInsertItemIntoOutputSlot</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getSecondResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span><span class="w"> </span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">            </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getThirdResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getFourthResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">());</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="p">}</span>
+</code></pre></div>
+<p>The <code>increaseCraftProgress()</code>, <code>resetProgress()</code> and <code>hasCraftingFinished</code> methods aren't really that special so I'll list them here:</p>
+<p><div class="highlight"><span class="filename">resetProgress() & increaseCraftProgress() & hasCraftingFinished()</span><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">resetProgress</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="p">}</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">increaseCraftProgress</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="n">progress</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="p">}</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">hasCraftingFinished</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">progress</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">maxProgress</span><span class="p">;</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="p">}</span>
+</code></pre></div>
+Before we can make the last method used in the <code>tick()</code> method, we need a helper method called <code>getCurrentRecipe()</code> which gets the current recipe by accessing the recipe manager.
+<div class="highlight"><span class="filename">getCurrentRecipe()</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">private</span><span class="w"> </span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">RecipeEntry</span><span class="o">&lt;</span><span class="n">ExampleRecipe</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="nf">getCurrentRecipe</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="n">SimpleInventory</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SimpleInventory</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">size</span><span class="p">());</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">        </span><span class="n">inv</span><span class="p">.</span><span class="na">setStack</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">getWorld</span><span class="p">().</span><span class="na">getRecipeManager</span><span class="p">().</span><span class="na">getFirstMatch</span><span class="p">(</span><span class="n">ExampleRecipe</span><span class="p">.</span><span class="na">Type</span><span class="p">.</span><span class="na">INSTANCE</span><span class="p">,</span><span class="w"> </span><span class="n">inv</span><span class="p">,</span><span class="w"> </span><span class="n">getWorld</span><span class="p">());</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="p">}</span>
+</code></pre></div>
+Now we can make the <code>craftItems()</code> method:</p>
+<div class="highlight"><span class="filename">craftItems()</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">craftItem</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">RecipeEntry</span><span class="o">&lt;</span><span class="n">ExampleRecipe</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">recipe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getCurrentRecipe</span><span class="p">();</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">removeStack</span><span class="p">(</span><span class="n">INPUT_SLOT</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">setStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ItemStack</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">        </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getCount</span><span class="p">()));</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">setStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ItemStack</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getSecondResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">        </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getSecondResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getCount</span><span class="p">()));</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">setStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ItemStack</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getThirdResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span><span class="w"> </span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">        </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getThirdResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">());</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">setStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ItemStack</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getFourthResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span><span class="w"> </span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">        </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getFourthResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">());</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="p">}</span>
+</code></pre></div>
+<p>The last thing, for the block entity, we need to do is override two more methods:</p>
+<div class="highlight"><span class="filename">toUpdatePacket() & toInitialChunkDataNbt()</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nd">@Nullable</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nd">@Override</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="kd">public</span><span class="w"> </span><span class="n">Packet</span><span class="o">&lt;</span><span class="n">ClientPlayPacketListener</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">toUpdatePacket</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">BlockEntityUpdateS2CPacket</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="p">}</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="nd">@Override</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="kd">public</span><span class="w"> </span><span class="n">NbtCompound</span><span class="w"> </span><span class="nf">toInitialChunkDataNbt</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">createNbt</span><span class="p">();</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="p">}</span>
+</code></pre></div>
+<p>The finished class should look something like this:</p>
+<div class="highlight"><span class="filename">Finished class</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">io.github.scaredsmods.examplemod.recipe.ExampleRecipe</span><span class="p">;</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">io.github.scaredsmods.examplemod.screenhandler.ExampleScreenHandler</span><span class="p">;</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory</span><span class="p">;</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.block.BlockState</span><span class="p">;</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.block.entity.BlockEntity</span><span class="p">;</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.entity.player.PlayerEntity</span><span class="p">;</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.entity.player.PlayerInventory</span><span class="p">;</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.inventory.Inventories</span><span class="p">;</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.inventory.SimpleInventory</span><span class="p">;</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.item.Item</span><span class="p">;</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.item.ItemStack</span><span class="p">;</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.nbt.NbtCompound</span><span class="p">;</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.network.PacketByteBuf</span><span class="p">;</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.network.listener.ClientPlayPacketListener</span><span class="p">;</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.network.packet.Packet</span><span class="p">;</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket</span><span class="p">;</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.recipe.RecipeEntry</span><span class="p">;</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.screen.PropertyDelegate</span><span class="p">;</span>
+<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.screen.ScreenHandler</span><span class="p">;</span>
+<a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.server.network.ServerPlayerEntity</span><span class="p">;</span>
+<a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.text.Text</span><span class="p">;</span>
+<a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.util.collection.DefaultedList</span><span class="p">;</span>
+<a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.util.math.BlockPos</span><span class="p">;</span>
+<a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a><span class="kn">import</span><span class="w"> </span><span class="nn">net.minecraft.world.World</span><span class="p">;</span>
+<a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a><span class="kn">import</span><span class="w"> </span><span class="nn">org.jetbrains.annotations.Nullable</span><span class="p">;</span>
+<a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a>
+<a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Optional</span><span class="p">;</span>
+<a id="__codelineno-16-28" name="__codelineno-16-28" href="#__codelineno-16-28"></a>
+<a id="__codelineno-16-29" name="__codelineno-16-29" href="#__codelineno-16-29"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ExampleBlockEntity</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">BlockEntity</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">ExtendedScreenHandlerFactory</span><span class="p">,</span><span class="w"> </span><span class="n">ImplementedInventory</span><span class="p">{</span>
+<a id="__codelineno-16-30" name="__codelineno-16-30" href="#__codelineno-16-30"></a>
+<a id="__codelineno-16-31" name="__codelineno-16-31" href="#__codelineno-16-31"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">DefaultedList</span><span class="o">&lt;</span><span class="n">ItemStack</span><span class="o">&gt;</span><span class="w"> </span><span class="n">inventory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DefaultedList</span><span class="p">.</span><span class="na">ofSize</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">ItemStack</span><span class="p">.</span><span class="na">EMPTY</span><span class="p">);</span>
+<a id="__codelineno-16-32" name="__codelineno-16-32" href="#__codelineno-16-32"></a>
+<a id="__codelineno-16-33" name="__codelineno-16-33" href="#__codelineno-16-33"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">INPUT_SLOT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-16-34" name="__codelineno-16-34" href="#__codelineno-16-34"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">OUTPUT_SLOT_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-16-35" name="__codelineno-16-35" href="#__codelineno-16-35"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">OUTPUT_SLOT_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<a id="__codelineno-16-36" name="__codelineno-16-36" href="#__codelineno-16-36"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">OUTPUT_SLOT_3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<a id="__codelineno-16-37" name="__codelineno-16-37" href="#__codelineno-16-37"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">OUTPUT_SLOT_4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<a id="__codelineno-16-38" name="__codelineno-16-38" href="#__codelineno-16-38"></a>
+<a id="__codelineno-16-39" name="__codelineno-16-39" href="#__codelineno-16-39"></a><span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">PropertyDelegate</span><span class="w"> </span><span class="n">propertyDelegate</span><span class="p">;</span>
+<a id="__codelineno-16-40" name="__codelineno-16-40" href="#__codelineno-16-40"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-16-41" name="__codelineno-16-41" href="#__codelineno-16-41"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">maxProgress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<a id="__codelineno-16-42" name="__codelineno-16-42" href="#__codelineno-16-42"></a>
+<a id="__codelineno-16-43" name="__codelineno-16-43" href="#__codelineno-16-43"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">ExampleBlockEntity</span><span class="p">(</span><span class="n">BlockPos</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">BlockState</span><span class="w"> </span><span class="n">state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-44" name="__codelineno-16-44" href="#__codelineno-16-44"></a><span class="w">        </span><span class="kd">super</span><span class="p">(</span><span class="n">ModBlockEntities</span><span class="p">.</span><span class="na">EXAMPLE_BLOCK_ENTITY</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">state</span><span class="p">);</span>
+<a id="__codelineno-16-45" name="__codelineno-16-45" href="#__codelineno-16-45"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">propertyDelegate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PropertyDelegate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-46" name="__codelineno-16-46" href="#__codelineno-16-46"></a><span class="w">            </span><span class="nd">@Override</span>
+<a id="__codelineno-16-47" name="__codelineno-16-47" href="#__codelineno-16-47"></a><span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">index</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-48" name="__codelineno-16-48" href="#__codelineno-16-48"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">index</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-49" name="__codelineno-16-49" href="#__codelineno-16-49"></a><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">ExampleBlockEntity</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">progress</span><span class="p">;</span>
+<a id="__codelineno-16-50" name="__codelineno-16-50" href="#__codelineno-16-50"></a><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">ExampleBlockEntity</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">maxProgress</span><span class="p">;</span>
+<a id="__codelineno-16-51" name="__codelineno-16-51" href="#__codelineno-16-51"></a><span class="w">                    </span><span class="k">default</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-16-52" name="__codelineno-16-52" href="#__codelineno-16-52"></a><span class="w">                </span><span class="p">};</span>
+<a id="__codelineno-16-53" name="__codelineno-16-53" href="#__codelineno-16-53"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-16-54" name="__codelineno-16-54" href="#__codelineno-16-54"></a>
+<a id="__codelineno-16-55" name="__codelineno-16-55" href="#__codelineno-16-55"></a><span class="w">            </span><span class="nd">@Override</span>
+<a id="__codelineno-16-56" name="__codelineno-16-56" href="#__codelineno-16-56"></a><span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">set</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-57" name="__codelineno-16-57" href="#__codelineno-16-57"></a><span class="w">                </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">index</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-58" name="__codelineno-16-58" href="#__codelineno-16-58"></a><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">ExampleBlockEntity</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
+<a id="__codelineno-16-59" name="__codelineno-16-59" href="#__codelineno-16-59"></a><span class="w">                    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">ExampleBlockEntity</span><span class="p">.</span><span class="na">this</span><span class="p">.</span><span class="na">maxProgress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
+<a id="__codelineno-16-60" name="__codelineno-16-60" href="#__codelineno-16-60"></a><span class="w">                </span><span class="p">}</span>
+<a id="__codelineno-16-61" name="__codelineno-16-61" href="#__codelineno-16-61"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-16-62" name="__codelineno-16-62" href="#__codelineno-16-62"></a>
+<a id="__codelineno-16-63" name="__codelineno-16-63" href="#__codelineno-16-63"></a><span class="w">            </span><span class="nd">@Override</span>
+<a id="__codelineno-16-64" name="__codelineno-16-64" href="#__codelineno-16-64"></a><span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">size</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-65" name="__codelineno-16-65" href="#__codelineno-16-65"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<a id="__codelineno-16-66" name="__codelineno-16-66" href="#__codelineno-16-66"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-16-67" name="__codelineno-16-67" href="#__codelineno-16-67"></a><span class="w">        </span><span class="p">};</span>
+<a id="__codelineno-16-68" name="__codelineno-16-68" href="#__codelineno-16-68"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-69" name="__codelineno-16-69" href="#__codelineno-16-69"></a>
+<a id="__codelineno-16-70" name="__codelineno-16-70" href="#__codelineno-16-70"></a>
+<a id="__codelineno-16-71" name="__codelineno-16-71" href="#__codelineno-16-71"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-16-72" name="__codelineno-16-72" href="#__codelineno-16-72"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">writeScreenOpeningData</span><span class="p">(</span><span class="n">ServerPlayerEntity</span><span class="w"> </span><span class="n">player</span><span class="p">,</span><span class="w"> </span><span class="n">PacketByteBuf</span><span class="w"> </span><span class="n">buf</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-73" name="__codelineno-16-73" href="#__codelineno-16-73"></a><span class="w">        </span><span class="n">buf</span><span class="p">.</span><span class="na">writeBlockPos</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">pos</span><span class="p">);</span>
+<a id="__codelineno-16-74" name="__codelineno-16-74" href="#__codelineno-16-74"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-75" name="__codelineno-16-75" href="#__codelineno-16-75"></a>
+<a id="__codelineno-16-76" name="__codelineno-16-76" href="#__codelineno-16-76"></a>
+<a id="__codelineno-16-77" name="__codelineno-16-77" href="#__codelineno-16-77"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-16-78" name="__codelineno-16-78" href="#__codelineno-16-78"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Text</span><span class="w"> </span><span class="nf">getDisplayName</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-79" name="__codelineno-16-79" href="#__codelineno-16-79"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Text</span><span class="p">.</span><span class="na">literal</span><span class="p">(</span><span class="s">&quot;Example&quot;</span><span class="p">);</span><span class="c1">//(1)!</span>
+<a id="__codelineno-16-80" name="__codelineno-16-80" href="#__codelineno-16-80"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-81" name="__codelineno-16-81" href="#__codelineno-16-81"></a>
+<a id="__codelineno-16-82" name="__codelineno-16-82" href="#__codelineno-16-82"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-16-83" name="__codelineno-16-83" href="#__codelineno-16-83"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">DefaultedList</span><span class="o">&lt;</span><span class="n">ItemStack</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getItems</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-84" name="__codelineno-16-84" href="#__codelineno-16-84"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">inventory</span><span class="p">;</span>
+<a id="__codelineno-16-85" name="__codelineno-16-85" href="#__codelineno-16-85"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-86" name="__codelineno-16-86" href="#__codelineno-16-86"></a>
+<a id="__codelineno-16-87" name="__codelineno-16-87" href="#__codelineno-16-87"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-16-88" name="__codelineno-16-88" href="#__codelineno-16-88"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">writeNbt</span><span class="p">(</span><span class="n">NbtCompound</span><span class="w"> </span><span class="n">nbt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-89" name="__codelineno-16-89" href="#__codelineno-16-89"></a><span class="w">        </span><span class="kd">super</span><span class="p">.</span><span class="na">writeNbt</span><span class="p">(</span><span class="n">nbt</span><span class="p">);</span>
+<a id="__codelineno-16-90" name="__codelineno-16-90" href="#__codelineno-16-90"></a><span class="w">        </span><span class="n">Inventories</span><span class="p">.</span><span class="na">writeNbt</span><span class="p">(</span><span class="n">nbt</span><span class="p">,</span><span class="w"> </span><span class="n">inventory</span><span class="p">);</span>
+<a id="__codelineno-16-91" name="__codelineno-16-91" href="#__codelineno-16-91"></a><span class="w">        </span><span class="n">nbt</span><span class="p">.</span><span class="na">putInt</span><span class="p">(</span><span class="s">&quot;example_block.progress&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">progress</span><span class="p">);</span>
+<a id="__codelineno-16-92" name="__codelineno-16-92" href="#__codelineno-16-92"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-93" name="__codelineno-16-93" href="#__codelineno-16-93"></a>
+<a id="__codelineno-16-94" name="__codelineno-16-94" href="#__codelineno-16-94"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-16-95" name="__codelineno-16-95" href="#__codelineno-16-95"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">readNbt</span><span class="p">(</span><span class="n">NbtCompound</span><span class="w"> </span><span class="n">nbt</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-96" name="__codelineno-16-96" href="#__codelineno-16-96"></a><span class="w">        </span><span class="kd">super</span><span class="p">.</span><span class="na">readNbt</span><span class="p">(</span><span class="n">nbt</span><span class="p">);</span>
+<a id="__codelineno-16-97" name="__codelineno-16-97" href="#__codelineno-16-97"></a><span class="w">        </span><span class="n">Inventories</span><span class="p">.</span><span class="na">readNbt</span><span class="p">(</span><span class="n">nbt</span><span class="p">,</span><span class="w"> </span><span class="n">inventory</span><span class="p">);</span>
+<a id="__codelineno-16-98" name="__codelineno-16-98" href="#__codelineno-16-98"></a><span class="w">        </span><span class="n">progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nbt</span><span class="p">.</span><span class="na">getInt</span><span class="p">(</span><span class="s">&quot;example_block.progress&quot;</span><span class="p">);</span>
+<a id="__codelineno-16-99" name="__codelineno-16-99" href="#__codelineno-16-99"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-100" name="__codelineno-16-100" href="#__codelineno-16-100"></a>
+<a id="__codelineno-16-101" name="__codelineno-16-101" href="#__codelineno-16-101"></a>
+<a id="__codelineno-16-102" name="__codelineno-16-102" href="#__codelineno-16-102"></a><span class="w">    </span><span class="nd">@Nullable</span>
+<a id="__codelineno-16-103" name="__codelineno-16-103" href="#__codelineno-16-103"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-16-104" name="__codelineno-16-104" href="#__codelineno-16-104"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">ScreenHandler</span><span class="w"> </span><span class="nf">createMenu</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">syncId</span><span class="p">,</span><span class="w"> </span><span class="n">PlayerInventory</span><span class="w"> </span><span class="n">playerInventory</span><span class="p">,</span><span class="w"> </span><span class="n">PlayerEntity</span><span class="w"> </span><span class="n">player</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-105" name="__codelineno-16-105" href="#__codelineno-16-105"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ExampleScreenHandler</span><span class="p">(</span><span class="n">syncId</span><span class="p">,</span><span class="w"> </span><span class="n">playerInventory</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">propertyDelegate</span><span class="p">);</span>
+<a id="__codelineno-16-106" name="__codelineno-16-106" href="#__codelineno-16-106"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-107" name="__codelineno-16-107" href="#__codelineno-16-107"></a>
+<a id="__codelineno-16-108" name="__codelineno-16-108" href="#__codelineno-16-108"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">tick</span><span class="p">(</span><span class="n">World</span><span class="w"> </span><span class="n">world</span><span class="p">,</span><span class="w"> </span><span class="n">BlockPos</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">BlockState</span><span class="w"> </span><span class="n">state</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-109" name="__codelineno-16-109" href="#__codelineno-16-109"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">world</span><span class="p">.</span><span class="na">isClient</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-110" name="__codelineno-16-110" href="#__codelineno-16-110"></a><span class="w">            </span><span class="k">return</span><span class="p">;</span>
+<a id="__codelineno-16-111" name="__codelineno-16-111" href="#__codelineno-16-111"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-16-112" name="__codelineno-16-112" href="#__codelineno-16-112"></a>
+<a id="__codelineno-16-113" name="__codelineno-16-113" href="#__codelineno-16-113"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">areOutputsSlotEmptyOrReceivable</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-114" name="__codelineno-16-114" href="#__codelineno-16-114"></a><span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">hasRecipe</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-115" name="__codelineno-16-115" href="#__codelineno-16-115"></a><span class="w">                </span><span class="k">this</span><span class="p">.</span><span class="na">increaseCraftProgress</span><span class="p">();</span>
+<a id="__codelineno-16-116" name="__codelineno-16-116" href="#__codelineno-16-116"></a><span class="w">                </span><span class="n">markDirty</span><span class="p">(</span><span class="n">world</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">state</span><span class="p">);</span>
+<a id="__codelineno-16-117" name="__codelineno-16-117" href="#__codelineno-16-117"></a>
+<a id="__codelineno-16-118" name="__codelineno-16-118" href="#__codelineno-16-118"></a><span class="w">                </span><span class="k">if</span><span class="p">(</span><span class="n">hasCraftingFinished</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-119" name="__codelineno-16-119" href="#__codelineno-16-119"></a><span class="w">                    </span><span class="k">this</span><span class="p">.</span><span class="na">craftItem</span><span class="p">();</span>
+<a id="__codelineno-16-120" name="__codelineno-16-120" href="#__codelineno-16-120"></a><span class="w">                    </span><span class="k">this</span><span class="p">.</span><span class="na">resetProgress</span><span class="p">();</span>
+<a id="__codelineno-16-121" name="__codelineno-16-121" href="#__codelineno-16-121"></a><span class="w">                </span><span class="p">}</span>
+<a id="__codelineno-16-122" name="__codelineno-16-122" href="#__codelineno-16-122"></a><span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-123" name="__codelineno-16-123" href="#__codelineno-16-123"></a><span class="w">                </span><span class="k">this</span><span class="p">.</span><span class="na">resetProgress</span><span class="p">();</span>
+<a id="__codelineno-16-124" name="__codelineno-16-124" href="#__codelineno-16-124"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-16-125" name="__codelineno-16-125" href="#__codelineno-16-125"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-126" name="__codelineno-16-126" href="#__codelineno-16-126"></a><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">resetProgress</span><span class="p">();</span>
+<a id="__codelineno-16-127" name="__codelineno-16-127" href="#__codelineno-16-127"></a><span class="w">            </span><span class="n">markDirty</span><span class="p">(</span><span class="n">world</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">state</span><span class="p">);</span>
+<a id="__codelineno-16-128" name="__codelineno-16-128" href="#__codelineno-16-128"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-16-129" name="__codelineno-16-129" href="#__codelineno-16-129"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-130" name="__codelineno-16-130" href="#__codelineno-16-130"></a>
+<a id="__codelineno-16-131" name="__codelineno-16-131" href="#__codelineno-16-131"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">resetProgress</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-132" name="__codelineno-16-132" href="#__codelineno-16-132"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-16-133" name="__codelineno-16-133" href="#__codelineno-16-133"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-134" name="__codelineno-16-134" href="#__codelineno-16-134"></a>
+<a id="__codelineno-16-135" name="__codelineno-16-135" href="#__codelineno-16-135"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">craftItem</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-136" name="__codelineno-16-136" href="#__codelineno-16-136"></a><span class="w">    </span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">RecipeEntry</span><span class="o">&lt;</span><span class="n">ExampleRecipe</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">recipe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getCurrentRecipe</span><span class="p">();</span>
+<a id="__codelineno-16-137" name="__codelineno-16-137" href="#__codelineno-16-137"></a>
+<a id="__codelineno-16-138" name="__codelineno-16-138" href="#__codelineno-16-138"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">removeStack</span><span class="p">(</span><span class="n">INPUT_SLOT</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-16-139" name="__codelineno-16-139" href="#__codelineno-16-139"></a>
+<a id="__codelineno-16-140" name="__codelineno-16-140" href="#__codelineno-16-140"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">setStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ItemStack</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span>
+<a id="__codelineno-16-141" name="__codelineno-16-141" href="#__codelineno-16-141"></a><span class="w">            </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getCount</span><span class="p">()));</span>
+<a id="__codelineno-16-142" name="__codelineno-16-142" href="#__codelineno-16-142"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">setStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ItemStack</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getSecondResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span>
+<a id="__codelineno-16-143" name="__codelineno-16-143" href="#__codelineno-16-143"></a><span class="w">            </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getSecondResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getCount</span><span class="p">()));</span>
+<a id="__codelineno-16-144" name="__codelineno-16-144" href="#__codelineno-16-144"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">setStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ItemStack</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getThirdResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span><span class="w"> </span>
+<a id="__codelineno-16-145" name="__codelineno-16-145" href="#__codelineno-16-145"></a><span class="w">            </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getThirdResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">());</span>
+<a id="__codelineno-16-146" name="__codelineno-16-146" href="#__codelineno-16-146"></a><span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">setStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ItemStack</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getFourthResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span><span class="w"> </span>
+<a id="__codelineno-16-147" name="__codelineno-16-147" href="#__codelineno-16-147"></a><span class="w">            </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getFourthResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">());</span>
+<a id="__codelineno-16-148" name="__codelineno-16-148" href="#__codelineno-16-148"></a><span class="w">    </span><span class="p">}</span><span class="w">   </span>
+<a id="__codelineno-16-149" name="__codelineno-16-149" href="#__codelineno-16-149"></a>
+<a id="__codelineno-16-150" name="__codelineno-16-150" href="#__codelineno-16-150"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">hasCraftingFinished</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-151" name="__codelineno-16-151" href="#__codelineno-16-151"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">progress</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">maxProgress</span><span class="p">;</span>
+<a id="__codelineno-16-152" name="__codelineno-16-152" href="#__codelineno-16-152"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-153" name="__codelineno-16-153" href="#__codelineno-16-153"></a>
+<a id="__codelineno-16-154" name="__codelineno-16-154" href="#__codelineno-16-154"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">increaseCraftProgress</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-155" name="__codelineno-16-155" href="#__codelineno-16-155"></a><span class="w">        </span><span class="n">progress</span><span class="o">++</span><span class="p">;</span>
+<a id="__codelineno-16-156" name="__codelineno-16-156" href="#__codelineno-16-156"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-157" name="__codelineno-16-157" href="#__codelineno-16-157"></a>
+<a id="__codelineno-16-158" name="__codelineno-16-158" href="#__codelineno-16-158"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">hasRecipe</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-159" name="__codelineno-16-159" href="#__codelineno-16-159"></a><span class="w">    </span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">RecipeEntry</span><span class="o">&lt;</span><span class="n">ExampleRecipe</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">recipe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getCurrentRecipe</span><span class="p">();</span>
+<a id="__codelineno-16-160" name="__codelineno-16-160" href="#__codelineno-16-160"></a>
+<a id="__codelineno-16-161" name="__codelineno-16-161" href="#__codelineno-16-161"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">isPresent</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">canInsertAmountIntoOutputSlot</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getResult</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getSecondResult</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span><span class="w"> </span>
+<a id="__codelineno-16-162" name="__codelineno-16-162" href="#__codelineno-16-162"></a><span class="w">                </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getThirdResult</span><span class="p">(</span><span class="kc">null</span><span class="p">),</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getFourthResult</span><span class="p">(</span><span class="kc">null</span><span class="p">))</span>
+<a id="__codelineno-16-163" name="__codelineno-16-163" href="#__codelineno-16-163"></a>
+<a id="__codelineno-16-164" name="__codelineno-16-164" href="#__codelineno-16-164"></a><span class="w">            </span><span class="o">&amp;&amp;</span><span class="w"> </span>
+<a id="__codelineno-16-165" name="__codelineno-16-165" href="#__codelineno-16-165"></a><span class="w">            </span><span class="n">canInsertItemIntoOutputSlot</span><span class="p">(</span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getSecondResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span><span class="w"> </span>
+<a id="__codelineno-16-166" name="__codelineno-16-166" href="#__codelineno-16-166"></a><span class="w">                </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getThirdResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">(),</span><span class="w"> </span><span class="n">recipe</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">value</span><span class="p">().</span><span class="na">getFourthResult</span><span class="p">(</span><span class="kc">null</span><span class="p">).</span><span class="na">getItem</span><span class="p">());</span>
+<a id="__codelineno-16-167" name="__codelineno-16-167" href="#__codelineno-16-167"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-168" name="__codelineno-16-168" href="#__codelineno-16-168"></a>
+<a id="__codelineno-16-169" name="__codelineno-16-169" href="#__codelineno-16-169"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">RecipeEntry</span><span class="o">&lt;</span><span class="n">ExampleRecipe</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="nf">getCurrentRecipe</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-170" name="__codelineno-16-170" href="#__codelineno-16-170"></a><span class="w">        </span><span class="n">SimpleInventory</span><span class="w"> </span><span class="n">inv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SimpleInventory</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">size</span><span class="p">());</span>
+<a id="__codelineno-16-171" name="__codelineno-16-171" href="#__codelineno-16-171"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-172" name="__codelineno-16-172" href="#__codelineno-16-172"></a><span class="w">            </span><span class="n">inv</span><span class="p">.</span><span class="na">setStack</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+<a id="__codelineno-16-173" name="__codelineno-16-173" href="#__codelineno-16-173"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-16-174" name="__codelineno-16-174" href="#__codelineno-16-174"></a>
+<a id="__codelineno-16-175" name="__codelineno-16-175" href="#__codelineno-16-175"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">getWorld</span><span class="p">().</span><span class="na">getRecipeManager</span><span class="p">().</span><span class="na">getFirstMatch</span><span class="p">(</span><span class="n">ExampleRecipe</span><span class="p">.</span><span class="na">Type</span><span class="p">.</span><span class="na">INSTANCE</span><span class="p">,</span><span class="w"> </span><span class="n">inv</span><span class="p">,</span><span class="w"> </span><span class="n">getWorld</span><span class="p">());</span>
+<a id="__codelineno-16-176" name="__codelineno-16-176" href="#__codelineno-16-176"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-177" name="__codelineno-16-177" href="#__codelineno-16-177"></a>
+<a id="__codelineno-16-178" name="__codelineno-16-178" href="#__codelineno-16-178"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">canInsertItemIntoOutputSlots</span><span class="p">(</span><span class="n">Item</span><span class="w"> </span><span class="n">item</span><span class="p">,</span><span class="w"> </span><span class="n">Item</span><span class="w"> </span><span class="n">item2</span><span class="p">,</span><span class="w"> </span><span class="n">Item</span><span class="w"> </span><span class="n">item3</span><span class="p">,</span><span class="w"> </span><span class="n">Item</span><span class="w"> </span><span class="n">item4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-179" name="__codelineno-16-179" href="#__codelineno-16-179"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getItem</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-16-180" name="__codelineno-16-180" href="#__codelineno-16-180"></a><span class="w">        </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getItem</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">item2</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-16-181" name="__codelineno-16-181" href="#__codelineno-16-181"></a><span class="w">        </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getItem</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">item3</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-16-182" name="__codelineno-16-182" href="#__codelineno-16-182"></a><span class="w">        </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getItem</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">item4</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">());</span>
+<a id="__codelineno-16-183" name="__codelineno-16-183" href="#__codelineno-16-183"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-184" name="__codelineno-16-184" href="#__codelineno-16-184"></a>
+<a id="__codelineno-16-185" name="__codelineno-16-185" href="#__codelineno-16-185"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">canInsertAmountIntoOutputSlots</span><span class="p">(</span><span class="n">ItemStack</span><span class="w"> </span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">ItemStack</span><span class="w"> </span><span class="n">result2</span><span class="p">,</span><span class="w"> </span><span class="n">ItemStack</span><span class="w"> </span><span class="n">result3</span><span class="p">,</span><span class="w"> </span><span class="n">ItemStack</span><span class="w"> </span><span class="n">result4</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-186" name="__codelineno-16-186" href="#__codelineno-16-186"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">result</span><span class="p">.</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-16-187" name="__codelineno-16-187" href="#__codelineno-16-187"></a><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">result2</span><span class="p">.</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-16-188" name="__codelineno-16-188" href="#__codelineno-16-188"></a><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">result3</span><span class="p">.</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-16-189" name="__codelineno-16-189" href="#__codelineno-16-189"></a><span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">result4</span><span class="p">.</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">();</span>
+<a id="__codelineno-16-190" name="__codelineno-16-190" href="#__codelineno-16-190"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-191" name="__codelineno-16-191" href="#__codelineno-16-191"></a>
+<a id="__codelineno-16-192" name="__codelineno-16-192" href="#__codelineno-16-192"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">areOutputsSlotEmptyOrReceivable</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-193" name="__codelineno-16-193" href="#__codelineno-16-193"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_1</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">())</span>
+<a id="__codelineno-16-194" name="__codelineno-16-194" href="#__codelineno-16-194"></a><span class="w">            </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-16-195" name="__codelineno-16-195" href="#__codelineno-16-195"></a><span class="w">            </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_2</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">())</span>
+<a id="__codelineno-16-196" name="__codelineno-16-196" href="#__codelineno-16-196"></a><span class="w">            </span><span class="o">&amp;&amp;</span><span class="w"> </span>
+<a id="__codelineno-16-197" name="__codelineno-16-197" href="#__codelineno-16-197"></a><span class="w">            </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_3</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">())</span>
+<a id="__codelineno-16-198" name="__codelineno-16-198" href="#__codelineno-16-198"></a><span class="w">            </span><span class="o">&amp;&amp;</span>
+<a id="__codelineno-16-199" name="__codelineno-16-199" href="#__codelineno-16-199"></a><span class="w">            </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">isEmpty</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getCount</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">getStack</span><span class="p">(</span><span class="n">OUTPUT_SLOT_4</span><span class="p">).</span><span class="na">getMaxCount</span><span class="p">());</span>
+<a id="__codelineno-16-200" name="__codelineno-16-200" href="#__codelineno-16-200"></a><span class="w">    </span><span class="p">}</span><span class="w">  </span>
+<a id="__codelineno-16-201" name="__codelineno-16-201" href="#__codelineno-16-201"></a>
+<a id="__codelineno-16-202" name="__codelineno-16-202" href="#__codelineno-16-202"></a><span class="w">    </span><span class="nd">@Nullable</span>
+<a id="__codelineno-16-203" name="__codelineno-16-203" href="#__codelineno-16-203"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-16-204" name="__codelineno-16-204" href="#__codelineno-16-204"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Packet</span><span class="o">&lt;</span><span class="n">ClientPlayPacketListener</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">toUpdatePacket</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-205" name="__codelineno-16-205" href="#__codelineno-16-205"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">BlockEntityUpdateS2CPacket</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<a id="__codelineno-16-206" name="__codelineno-16-206" href="#__codelineno-16-206"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-207" name="__codelineno-16-207" href="#__codelineno-16-207"></a>
+<a id="__codelineno-16-208" name="__codelineno-16-208" href="#__codelineno-16-208"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-16-209" name="__codelineno-16-209" href="#__codelineno-16-209"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">NbtCompound</span><span class="w"> </span><span class="nf">toInitialChunkDataNbt</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-210" name="__codelineno-16-210" href="#__codelineno-16-210"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">createNbt</span><span class="p">();</span>
+<a id="__codelineno-16-211" name="__codelineno-16-211" href="#__codelineno-16-211"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-212" name="__codelineno-16-212" href="#__codelineno-16-212"></a><span class="p">}</span>
+</code></pre></div>
+<p>Note that at this point, there will be alot of errors present because we, for example, haven't made the <code>ExampleRecipe</code> class.
+That is exactly what we are going to do now. Most of the errors in the <code>ExampleBlock</code> class should be gone, the only error that should remain is the error on the <code>onUse()</code> method.</p>
+<p><a href="../../recipe/">Making a custom recipe</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../three-outputs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Three Outputs">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Three Outputs
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../recipe/" class="md-footer__link md-footer__link--next" aria-label="Next: Making a custom recipe">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Making a custom recipe
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://youtube.com/@scaredrabbitnl" target="_blank" rel="noopener" title="youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://modrinth.com/user/scaredrabbitnl_" target="_blank" rel="noopener" title="modrinth.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.252.004a11.78 11.768 0 0 0-8.92 3.73 11 10.999 0 0 0-2.17 3.11 11.37 11.359 0 0 0-1.16 5.169c0 1.42.17 2.5.6 3.77.24.759.77 1.899 1.17 2.529a12.3 12.298 0 0 0 8.85 5.639c.44.05 2.54.07 2.76.02.2-.04.22.1-.26-1.7l-.36-1.37-1.01-.06a8.5 8.489 0 0 1-5.18-1.8 5.34 5.34 0 0 1-1.3-1.26c0-.05.34-.28.74-.5a37.572 37.545 0 0 1 2.88-1.629c.03 0 .5.45 1.06.98l1 .97 2.07-.43 2.06-.43 1.47-1.47c.8-.8 1.48-1.5 1.48-1.52 0-.09-.42-1.63-.46-1.7-.04-.06-.2-.03-1.02.18-.53.13-1.2.3-1.45.4l-.48.15-.53.53-.53.53-.93.1-.93.07-.52-.5a2.7 2.7 0 0 1-.96-1.7l-.13-.6.43-.57c.68-.9.68-.9 1.46-1.1.4-.1.65-.2.83-.33.13-.099.65-.579 1.14-1.069l.9-.9-.7-.7-.7-.7-1.95.54c-1.07.3-1.96.53-1.97.53-.03 0-2.23 2.48-2.63 2.97l-.29.35.28 1.03c.16.56.3 1.16.31 1.34l.03.3-.34.23c-.37.23-2.22 1.3-2.84 1.63-.36.2-.37.2-.44.1-.08-.1-.23-.6-.32-1.03-.18-.86-.17-2.75.02-3.73a8.84 8.839 0 0 1 7.9-6.93c.43-.03.77-.08.78-.1.06-.17.5-2.999.47-3.039-.01-.02-.1-.02-.2-.03Zm3.68.67c-.2 0-.3.1-.37.38-.06.23-.46 2.42-.46 2.52 0 .04.1.11.22.16a8.51 8.499 0 0 1 2.99 2 8.38 8.379 0 0 1 2.16 3.449 6.9 6.9 0 0 1 .4 2.8c0 1.07 0 1.27-.1 1.73a9.37 9.369 0 0 1-1.76 3.769c-.32.4-.98 1.06-1.37 1.38-.38.32-1.54 1.1-1.7 1.14-.1.03-.1.06-.07.26.03.18.64 2.56.7 2.78l.06.06a12.07 12.058 0 0 0 7.27-9.4c.13-.77.13-2.58 0-3.4a11.96 11.948 0 0 0-5.73-8.578c-.7-.42-2.05-1.06-2.25-1.06Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.curseforge.com/members/scaredrabbitnl/projects" target="_blank" rel="noopener" title="www.curseforge.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.326 9.214s4.9-.772 5.674-3.026h-7.507V4.4H0l2.032 2.358v2.415s5.127-.267 7.11 1.237c2.714 2.516-3.053 5.917-3.053 5.917l-.99 3.273c1.547-1.473 4.494-3.377 9.899-3.286-2.057.65-4.125 1.665-5.735 3.286h10.925l-1.029-3.273s-7.918-4.668-.833-7.112z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate", "content.tabs.link", "content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.footer"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
