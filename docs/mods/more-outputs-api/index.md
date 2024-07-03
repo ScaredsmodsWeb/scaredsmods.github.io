@@ -14,7 +14,13 @@ Minecraft Version | Mod Version| Mod Loader | Status
 1.20.x | 1.x.y.z | Fabric | *done*
 1.21.x | 2.x.y.z | Fabric | *current version*
 
+This mod is availabe on: 
 
+[![Modrinth](https://raw.githubusercontent.com/Prospector/badges/master/modrinth-badge-72h-padded.png)](https://modrinth.com/mod/more-outputs-api) 
+
+and  on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/more-outputs-api)
+
+Extra info on the mod such as download count can be found [here](../more-outputs-api/extra-info.md)
 
 ### Getting Started
 
@@ -69,5 +75,5 @@ I would assume that you already know most of the things we are about to do, but 
 - A custom [block](../more-outputs-api/block.md)
 - A (custom) [block entity](../more-outputs-api/block-entity/index.md)
 - A custom [recipe](../more-outputs-api/recipe/index.md) of course
-- A [screenhandler](../more-outputs-api/screenhandler/index.md) for the block entity
+- A [screen(handler)](../more-outputs-api/screen/index.md) for the block entity
 

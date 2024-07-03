@@ -1,10 +1,10 @@
-# Screenhandlers
+# Screen (handlers)
 
 We need a few things, 
 
 - A class that will register the screen handlers (ModScreenHandlers)
-- A [screen](../screenhandler/examplescreen.md)
-- A [screenhandler](../screenhandler/examplescreenhandler.md)
+- A [screen](../screen/examplescreen.md)
+- A [screenhandler](../screen/examplescreenhandler.md)
 
 ## ModScreenHandlers
 
@@ -22,4 +22,4 @@ public static void registerScreenHandlers() {
 
 1. This can be empty and is recommended to be empty
 
-Now we can create a [screen](../screenhandler/examplescreen.md) and a [screenhandler](../screenhandler/examplescreenhandler.md). 
+Now we can create a [screen](../screen/examplescreen.md) and a [screenhandler](../screen/examplescreenhandler.md). 

@@ -10,6 +10,7 @@ nav:
     - 'mods/index.md'
     - More Outputs API: 
       - Getting Started: 'mods/more-outputs-api/index.md'
+      - Extra information: 'mods/more-outputs-api/extra-info.md'
       - Block: 'mods/more-outputs-api/block.md'
       - Block Entity: 
           - 'mods/more-outputs-api/block-entity/index.md'
@@ -22,9 +23,10 @@ nav:
           - Three output recipe: 'mods/more-outputs-api/recipe/three-output-recipe/index.md'
           - Four output recipe: 'mods/more-outputs-api/recipe/four-output-recipe/index.md'
       - Screenhandlers: 
-          - Getting started with screenhandlers: 'mods/more-outputs-api/screenhandler/index.md'
-          - Example screen: 'mods/more-outputs-api/screenhandler/examplescreen.md'
-          - Example screen handler: 'mods/more-outputs-api/screenhandler/examplescreenhandler.md'
+          - Getting started with screenhandlers: 'mods/more-outputs-api/screen/index.md'
+          - Example screen handler: 'mods/more-outputs-api/screen/examplescreenhandler.md'
+          - Example screen: 'mods/more-outputs-api/screen/examplescreen.md'
+          
       - Finishing up:
           - Registering: 'mods/more-outputs-api/registering.md'
           - Connecting screen: 'mods/more-outputs-api/connecting.md'
