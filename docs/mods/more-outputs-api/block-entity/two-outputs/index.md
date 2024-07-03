@@ -347,7 +347,7 @@ public class ExampleBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     @Override
     public Text getDisplayName() {
-        return Text.literal("Gem Polishing Station");
+        return Text.literal("Example Block");
     }
 
     @Override
@@ -359,14 +359,14 @@ public class ExampleBlockEntity extends BlockEntity implements ExtendedScreenHan
     public void writeNbt(NbtCompound nbt) {
         super.writeNbt(nbt);
         Inventories.writeNbt(nbt, inventory);
-        nbt.putInt("gem_polishing_station.progress", progress);
+        nbt.putInt("example_block.progress", progress);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
         super.readNbt(nbt);
         Inventories.readNbt(nbt, inventory);
-        progress = nbt.getInt("gem_polishing_station.progress");
+        progress = nbt.getInt("example_block.progress");
     }
 
 
@@ -469,4 +469,4 @@ public class ExampleBlockEntity extends BlockEntity implements ExtendedScreenHan
 Note that at this point, there will be alot of errors present because we, for example, haven't made the ```ExampleRecipe``` class.
 That is exactly what we are going to do now. Most of the errors in the ```ExampleBlock``` class should be gone, the only error that should remain is the error on the ```onUse()``` method.
 
-[Making a custom recipe](../../recipe/two-output-recipe/index.md)
+[Making a custom recipe](../../recipe/index.md)
