@@ -79,5 +79,5 @@ private void renderProgressArrow(DrawContext context, int x, int y) {
 ## [Finishing up](../other-things.md)
 Now we can do the final things to complete our multiple output block entity!
 
-[Finishing up](../finishing.md)
+[Finishing up](../other-things.md)
 
